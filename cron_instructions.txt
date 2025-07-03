@@ -1,0 +1,13 @@
+
+# 📅 INSTRUCCIONES PARA PROGRAMAR LA ACTUALIZACIÓN AUTOMÁTICA
+
+1. Abre tu terminal y escribe:
+   crontab -e
+
+2. Agrega esta línea al final del archivo (esto lo ejecutará todos los días a las 10:00 AM):
+
+0 10 * * * /bin/bash /ruta/a/tu/proyecto/schedule_update.sh
+
+3. Asegúrate de reemplazar "/ruta/a/tu/proyecto" con el path donde tengas tus archivos.
+
+4. Asegúrate de que el script `update_csv_to_github_secure.py` funcione manualmente primero.
