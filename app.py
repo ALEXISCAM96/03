@@ -63,7 +63,6 @@ def extract_team_stats(df, team):
         "reds": np.mean(reds),
         "goals": np.mean(goals)
     }
-
 if st.button("🔍 Analizar partido"):
     df_local = get_last_matches(df, equipo_local)
     df_visita = get_last_matches(df, equipo_visitante)
