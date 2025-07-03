@@ -1,3 +1,5 @@
-# Predicción Inteligente de Fútbol
+# Predicción de Fútbol (Simulada)
 
-App completa con estadísticas, predicción de goles, corners, tarjetas y más, usando datos simulados.
+Esta aplicación predice goles, remates, tarjetas y corners con datos locales.
+- No usa APIs externas
+- Ideal para pruebas y demostraciones
