@@ -67,6 +67,9 @@ def extract_team_stats(df, team):
 if st.button("🔍 Analizar partido"):
     df_local = get_last_matches(df, equipo_local)
     df_visita = get_last_matches(df, equipo_visitante)
+if df_local.empty or df_visita.empty:
+    st.warning("❗ No hay suficientes datos para uno o ambos equipos seleccionados.")
+    st.stop()
 
     stats_local = extract_team_stats(df_local, equipo_local)
     stats_visita = extract_team_stats(df_visita, equipo_visitante)
